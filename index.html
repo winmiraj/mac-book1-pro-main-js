@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- bootstrap stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  
+</head>
+<body>
+  <main>
+    <section class="container mt-4">
+      <div class="row d-flex justify-content-center">
+        <div class=" col-lg-5">
+          <img  class="w-75" src="images/mac.png" alt="">
+        </div>
+        <div class="col-lg-7">
+            <h1>Customize Your Blue 24-inch <br>iMac with Apple M1 Chip.</h1>
+          <p class="w-75">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU and 16 core
+            Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Magic Keyboard-US
+            English</p>
+            <!-- memory button -->
+          <div class="mt-4">
+            <h5>Memory</h5>
+            <button type="button" id="memory-button-1" class="btn btn-outline-dark">8GB unified memory</button>
+         
+            <button type="button" id="memory-button-2" class="btn btn-outline-dark">16GB unified memory</button>
+          </div>
+          <!-- storage button -->
+          <div class="mt-4">
+            <h5>Storage</h5>
+            <button type="button" id="storage-button-1" class="btn btn-outline-dark">256GB SSD storage</button>
+
+            <button type="button" id="storage-button-2" class="btn btn-outline-dark">512GB SSD storage</button>
+
+            <button type="button" id="storage-button-3" class="btn btn-outline-dark">1TB SSD storage</button>
+          </div>
+          <!-- delivery option button -->
+          <div class="mt-4">
+            <h5>Chose Your delivery option</h5>
+            <button type="button" id="delivery-button-1" class="btn btn-outline-dark">Friday,Aug 25 FREE prime Delivery</button>
+
+            <button type="button" id="delivery-button-2" class="btn btn-outline-dark">Friday,Aug 21 Delivery charge $20</button>
+          </div>
+            <div class="price-table">
+              <!-- price table -->
+              <table class="table w-50 mt-4">
+                <tbody>
+                  <tr class="fw-bold">
+                    <td>Best Price</td>
+                    <td scope="col">$<span id="first-Price">1299</span></td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td>Extra Memory Cost</td>
+                    <td scope="col">$<span id="memory-cost">0</span></td>
+                  </tr>
+                  <tr class="fw-bold">
+                    <td scope="row">Extra Storage Cost</td>
+                    <td scope="col">$<span id="storage-cost">0</span></td>
+                  </tr>
+                  <tr class="fw-bold" >
+                    <td>Delivery Charge</td>
+                    <td>$<span id="delivery-cost">0</span></td>
+                  </tr>
+                  <!-- Total price -->
+                  <tr class="table-group-divider fw-bold">
+                    <td>Total Price</td>
+                    <td>$<span id="total-cost">1299</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- input apply button-->
+            <div>
+              <h6>Add Promo code</h6>
+              <input id="input-text" type="text">
+              <button id="apply-btn" onclick="applyButton()" type="button" class="btn btn-danger">Apply</button>
+            </div>
+          </div>
+        </div>
+      <hr>
+      <!-- percentage price -->
+      <div>
+        <h2 class="text-center">Total:$<span id="increment">1299</span></h2>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+<!-- script style -->
+<script src="js/app.js"></script>
+
+</html>
